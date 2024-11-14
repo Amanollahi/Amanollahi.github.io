@@ -11,39 +11,71 @@
     <!-- Navigation Bar -->
     <nav>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a onclick="scrollToSection('home')">Home</a></li>
+            <li><a onclick="scrollToSection('about')">About Me</a></li>
+            <li><a onclick="scrollToSection('projects')">Projects</a></li>
+            <li><a onclick="scrollToSection('experience')">Experience</a></li>
+            <li><a onclick="scrollToSection('contact')">Contact</a></li>
         </ul>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <h1>Hi, I’m Saba Amanollahi</h1>
-        <p>A Data Scientist and Machine Learning Engineer</p>
+        <p>Data Scientist and Machine Learning Engineer</p>
     </section>
 
     <!-- About Me Section -->
     <section id="about" class="content-section">
         <h2>About Me</h2>
-        <p>I am a passionate Data Scientist with expertise in predictive modeling, time-series analysis, and machine learning. With a Ph.D. in Computer Engineering, I have over 7 years of experience delivering insights and building scalable AI solutions.</p>
+        <p>I am a Data Scientist and Machine Learning Engineer with a Ph.D. in Computer Engineering and over 7 years of experience in the field. I specialize in building machine learning models and deploying edge AI solutions, with a focus on business impact and operational efficiency. My expertise spans ML pipelines, deep learning, real-time on-device solutions, and translating complex technical challenges into actionable strategies.</p>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="content-section">
         <h2>Projects</h2>
         <div class="project">
-            <h3>Pricing Optimization Tool</h3>
-            <p>Machine learning-based pricing tool that improved accuracy by 60%.</p>
+            <h3>ML-Powered Pricing Tool</h3>
+            <p>Developed a machine learning-based pricing tool, achieving a 60% improvement in mean absolute error and a 25% reduction in Time to Quote. Integrated reinforcement learning models based on management feedback to optimize pricing strategies.</p>
         </div>
         <div class="project">
-            <h3>Indoor Positioning System</h3>
-            <p>Enhanced hospital asset tracking using deep learning, improving positioning accuracy.</p>
+            <h3>Indoor Positioning System for Hospitals</h3>
+            <p>Enhanced hospital asset tracking with deep learning, reducing positioning errors by 15% and improving patient care efficiency. Developed geofencing algorithms to ensure optimal asset placement during emergencies.</p>
         </div>
         <div class="project">
-            <h3>Customer Segmentation</h3>
-            <p>Developed a customer segmentation model to optimize marketing strategies.</p>
+            <h3>Customer Segmentation & Revenue Forecasting</h3>
+            <p>Implemented customer segmentation to reduce churn and improve targeting, along with revenue forecasting models that increased predictive accuracy by 30%. Integrated data testing using DBT for quality assurance.</p>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="content-section">
+        <h2>Experience</h2>
+        <div class="job">
+            <h3>Data Scientist at Ontic, Manufacturing and Engineering Inc., Los Angeles, CA</h3>
+            <p>Dec 2022 - Aug 2024</p>
+            <ul>
+                <li>Developed an ML-powered pricing tool using Machine Learning, Deep Learning, and Time Series analysis, achieving a 60% improvement in mean absolute error and reducing Time to Quote by 25%.</li>
+                <li>Built a CI/CD pipeline with GitHub Actions and Snowflake for streamlined model deployment, reducing data collection time by 50%.</li>
+                <li>Implemented Power BI dashboards and Python-based scrapers for data management, optimizing pricing strategies by 30%.</li>
+            </ul>
+        </div>
+        <div class="job">
+            <h3>Machine Learning Engineer at BDD Systems, Tehran, Iran</h3>
+            <p>Jan 2019 - Jan 2022</p>
+            <ul>
+                <li>Engineered and preprocessed real-time location data for hospital assets using advanced Redis-based pipelines, enhancing data quality for ML models.</li>
+                <li>Developed Deep Learning algorithms in PyTorch for indoor positioning, reducing errors by 15% and improving patient care efficiency.</li>
+                <li>Built scalable backend solutions using Django, PostgreSQL, and Docker for real-time ML model deployment via RESTful APIs.</li>
+            </ul>
+        </div>
+        <div class="job">
+            <h3>Data Science Consultant at Kavosh Group, Tehran, Iran</h3>
+            <p>Jan 2017 - Jan 2019</p>
+            <ul>
+                <li>Designed ML models for pricing optimization, achieving a 20% increase in profit and enhancing product recommendations.</li>
+                <li>Improved ETL processes by 40% through optimized SSIS workflows and developed QlikView dashboards to support data-driven decision-making.</li>
+            </ul>
         </div>
     </section>
 
@@ -54,7 +86,7 @@
         <ul>
             <li><a href="https://www.linkedin.com/in/saba-amanollahi/" target="_blank">LinkedIn</a></li>
             <li><a href="https://github.com/amanollahi" target="_blank">GitHub</a></li>
-			<li>Email: <a href="mailto:saba764@gmail.com">saba764@gmail.com</a></li>
+            <li>Email: <a href="mailto:saba764@gmail.com">saba764@gmail.com</a></li>
         </ul>
     </section>
 
@@ -62,6 +94,15 @@
     <footer>
         <p>&copy; 2024 Saba Amanollahi</p>
     </footer>
+
+    <!-- Smooth Scrolling JavaScript -->
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script>
 
 </body>
 </html>
