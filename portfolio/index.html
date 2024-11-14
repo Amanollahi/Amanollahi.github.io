@@ -11,11 +11,11 @@
     <!-- Navigation Bar -->
     <nav>
         <ul>
-            <li><a onclick="scrollToSection('home')">Home</a></li>
-            <li><a onclick="scrollToSection('about')">About Me</a></li>
-            <li><a onclick="scrollToSection('projects')">Projects</a></li>
-            <li><a onclick="scrollToSection('experience')">Experience</a></li>
-            <li><a onclick="scrollToSection('contact')">Contact</a></li>
+            <li><a href="javascript:void(0)" onclick="scrollToSection('home')">Home</a></li>
+            <li><a href="javascript:void(0)" onclick="scrollToSection('about')">About Me</a></li>
+            <li><a href="javascript:void(0)" onclick="scrollToSection('projects')">Projects</a></li>
+            <li><a href="javascript:void(0)" onclick="scrollToSection('experience')">Experience</a></li>
+            <li><a href="javascript:void(0)" onclick="scrollToSection('contact')">Contact</a></li>
         </ul>
     </nav>
 
@@ -28,7 +28,7 @@
     <!-- About Me Section -->
     <section id="about" class="content-section">
         <h2>About Me</h2>
-        <p>I am a Data Scientist and Machine Learning Engineer with a Ph.D. in Computer Engineering and over 7 years of experience in the field. I specialize in building machine learning models and deploying edge AI solutions, with a focus on business impact and operational efficiency. My expertise spans ML pipelines, deep learning, real-time on-device solutions, and translating complex technical challenges into actionable strategies.</p>
+        <p>I am a Data Scientist and Machine Learning Engineer with a Ph.D. in Computer Engineering and over 7 years of experience in the field. I specialize in building machine learning models and deploying edge AI solutions, with a focus on business impact and operational efficiency.</p>
     </section>
 
     <!-- Projects Section -->
@@ -36,15 +36,11 @@
         <h2>Projects</h2>
         <div class="project">
             <h3>ML-Powered Pricing Tool</h3>
-            <p>Developed a machine learning-based pricing tool, achieving a 60% improvement in mean absolute error and a 25% reduction in Time to Quote. Integrated reinforcement learning models based on management feedback to optimize pricing strategies.</p>
+            <p>Developed a machine learning-based pricing tool, achieving a 60% improvement in mean absolute error and a 25% reduction in Time to Quote.</p>
         </div>
         <div class="project">
             <h3>Indoor Positioning System for Hospitals</h3>
-            <p>Enhanced hospital asset tracking with deep learning, reducing positioning errors by 15% and improving patient care efficiency. Developed geofencing algorithms to ensure optimal asset placement during emergencies.</p>
-        </div>
-        <div class="project">
-            <h3>Customer Segmentation & Revenue Forecasting</h3>
-            <p>Implemented customer segmentation to reduce churn and improve targeting, along with revenue forecasting models that increased predictive accuracy by 30%. Integrated data testing using DBT for quality assurance.</p>
+            <p>Enhanced hospital asset tracking with deep learning, reducing positioning errors by 15%.</p>
         </div>
     </section>
 
@@ -52,29 +48,11 @@
     <section id="experience" class="content-section">
         <h2>Experience</h2>
         <div class="job">
-            <h3>Data Scientist at Ontic, Manufacturing and Engineering Inc., Los Angeles, CA</h3>
+            <h3>Data Scientist at Ontic</h3>
             <p>Dec 2022 - Aug 2024</p>
             <ul>
-                <li>Developed an ML-powered pricing tool using Machine Learning, Deep Learning, and Time Series analysis, achieving a 60% improvement in mean absolute error and reducing Time to Quote by 25%.</li>
-                <li>Built a CI/CD pipeline with GitHub Actions and Snowflake for streamlined model deployment, reducing data collection time by 50%.</li>
-                <li>Implemented Power BI dashboards and Python-based scrapers for data management, optimizing pricing strategies by 30%.</li>
-            </ul>
-        </div>
-        <div class="job">
-            <h3>Machine Learning Engineer at BDD Systems, Tehran, Iran</h3>
-            <p>Jan 2019 - Jan 2022</p>
-            <ul>
-                <li>Engineered and preprocessed real-time location data for hospital assets using advanced Redis-based pipelines, enhancing data quality for ML models.</li>
-                <li>Developed Deep Learning algorithms in PyTorch for indoor positioning, reducing errors by 15% and improving patient care efficiency.</li>
-                <li>Built scalable backend solutions using Django, PostgreSQL, and Docker for real-time ML model deployment via RESTful APIs.</li>
-            </ul>
-        </div>
-        <div class="job">
-            <h3>Data Science Consultant at Kavosh Group, Tehran, Iran</h3>
-            <p>Jan 2017 - Jan 2019</p>
-            <ul>
-                <li>Designed ML models for pricing optimization, achieving a 20% increase in profit and enhancing product recommendations.</li>
-                <li>Improved ETL processes by 40% through optimized SSIS workflows and developed QlikView dashboards to support data-driven decision-making.</li>
+                <li>Developed a pricing tool using ML and time series, reducing Time to Quote by 25%.</li>
+                <li>Created Power BI dashboards and Python scrapers for data management, optimizing pricing by 30%.</li>
             </ul>
         </div>
     </section>
@@ -95,12 +73,16 @@
         <p>&copy; 2024 Saba Amanollahi</p>
     </footer>
 
-    <!-- Smooth Scrolling JavaScript -->
+    <!-- JavaScript for Smooth Scrolling without URL Fragments -->
     <script>
         function scrollToSection(sectionId) {
-            document.getElementById(sectionId).scrollIntoView({
-                behavior: 'smooth'
-            });
+            const section = document.getElementById(sectionId);
+            if (section) {
+                window.scrollTo({
+                    top: section.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
         }
     </script>
 
