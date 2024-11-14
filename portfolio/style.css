@@ -109,6 +109,7 @@ a:hover {
     color: #6C63FF; /* Optional color change on hover */
     cursor: pointer;
 }
+
 /* Style for the CV Download Link */
 #about a {
     display: inline-block;
@@ -122,4 +123,19 @@ a:hover {
 
 #about a:hover {
     background-color: #333;
+}
+
+/* Skills, Certifications, and Publications Sections */
+#skills ul, #certifications ul, #publications ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#skills li, #certifications li, #publications li {
+    margin-bottom: 10px;
+}
+
+/* Project and Other Content Styling */
+.project, .content-section ul {
+    margin-bottom: 20px;
 }

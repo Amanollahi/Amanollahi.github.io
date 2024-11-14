@@ -13,8 +13,10 @@
         <ul>
             <li><a href="javascript:void(0)" onclick="scrollToSection('home')">Home</a></li>
             <li><a href="javascript:void(0)" onclick="scrollToSection('about')">About Me</a></li>
+            <li><a href="javascript:void(0)" onclick="scrollToSection('skills')">Skills</a></li>
+            <li><a href="javascript:void(0)" onclick="scrollToSection('certifications')">Certifications</a></li>
+            <li><a href="javascript:void(0)" onclick="scrollToSection('publications')">Publications</a></li>
             <li><a href="javascript:void(0)" onclick="scrollToSection('projects')">Projects</a></li>
-            <li><a href="javascript:void(0)" onclick="scrollToSection('experience')">Experience</a></li>
             <li><a href="javascript:void(0)" onclick="scrollToSection('contact')">Contact</a></li>
         </ul>
     </nav>
@@ -27,44 +29,66 @@
 
     <!-- About Me Section -->
     <section id="about" class="content-section">
-		<h2>About Me</h2>
-		<p>I am a Data Scientist and Machine Learning Engineer with a Ph.D. in Computer Engineering and over 7 years of experience in the field...</p>
-		<p><a href="Saba_Amanollahi_CV.pdf" target="_blank" download>Download My CV</a></p>
-	</section>
+        <h2>About Me</h2>
+        <p>I am a Data Scientist and Machine Learning Engineer with a Ph.D. in Computer Engineering and over 7 years of experience. I specialize in building and deploying machine learning models, particularly for edge AI and real-time applications, to drive impactful business results.</p>
+        <p>Throughout my career, I have worked on various projects, including predictive analytics, deep learning applications, and advanced pricing and forecasting tools. My background in both academia and industry allows me to tackle complex technical challenges with a strategic approach, transforming data into actionable insights that enhance operational efficiency.</p>
+        <p><a href="Saba_Amanollahi_CV.pdf" target="_blank" download>Download My CV</a></p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="content-section">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Programming Languages:</strong> Python, C, C++, SQL, R, MATLAB</li>
+            <li><strong>Machine Learning & Deep Learning:</strong> Scikit-Learn, TensorFlow, PyTorch, Keras, xgboost</li>
+            <li><strong>Data Engineering & Management:</strong> Snowflake, Postgres, Redis, DBT, Fivetran</li>
+            <li><strong>Data Visualization:</strong> Power BI, QlikView, Matplotlib, Seaborn</li>
+            <li><strong>Other Tools:</strong> Git, GitHub, Docker, CI/CD pipelines</li>
+        </ul>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="content-section">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Generative AI with Large Language Models – Coursera</li>
+            <li>Deep Learning Specialization – Coursera</li>
+            <li>Medical Image Analysis in Python – Educative.io</li>
+            <li>Machine Learning: Natural Language Processing in Python – Udemy</li>
+        </ul>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="content-section">
+        <h2>Publications</h2>
+        <ul>
+            <li><strong>IEEE TVLSI</strong> – Research on arithmetic design and optimization for energy-efficient AI hardware.</li>
+            <li><strong>ACM TECS</strong> – Contributions to scalable deep learning hardware accelerators.</li>
+            <li><strong>IEEE ESL</strong> – Published work on machine learning applications in electronic design automation (EDA).</li>
+        </ul>
+    </section>
 
     <!-- Projects Section -->
     <section id="projects" class="content-section">
         <h2>Projects</h2>
         <div class="project">
             <h3>ML-Powered Pricing Tool</h3>
-            <p>Developed a machine learning-based pricing tool, achieving a 60% improvement in mean absolute error and a 25% reduction in Time to Quote.</p>
+            <p>Developed a pricing tool using machine learning and time series analysis, improving accuracy by 60% and reducing Time to Quote by 25%. Integrated a CI/CD pipeline and data visualization dashboards for real-time insights.</p>
         </div>
         <div class="project">
-            <h3>Indoor Positioning System for Hospitals</h3>
-            <p>Enhanced hospital asset tracking with deep learning, reducing positioning errors by 15%.</p>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="content-section">
-        <h2>Experience</h2>
-        <div class="job">
-            <h3>Data Scientist at Ontic</h3>
-            <p>Dec 2022 - Aug 2024</p>
-            <ul>
-                <li>Developed a pricing tool using ML and time series, reducing Time to Quote by 25%.</li>
-                <li>Created Power BI dashboards and Python scrapers for data management, optimizing pricing by 30%.</li>
-            </ul>
+            <h3>Indoor Positioning System</h3>
+            <p>Implemented a deep learning solution for real-time hospital asset tracking, enhancing data accuracy by 15% and improving logistics. Built a scalable backend in Django and PostgreSQL for seamless data exchange.</p>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="content-section">
         <h2>Contact</h2>
-        <p>Feel free to connect with me:</p>
+        <p>Let’s connect! Feel free to reach out on any of the following platforms:</p>
         <ul>
             <li><a href="https://www.linkedin.com/in/saba-amanollahi/" target="_blank">LinkedIn</a></li>
             <li><a href="https://github.com/amanollahi" target="_blank">GitHub</a></li>
+            <li><a href="https://scholar.google.com/citations?user=nZbS7VUAAAAJ&hl=en" target="_blank">Google Scholar</a></li>
             <li>Email: <a href="mailto:saba764@gmail.com">saba764@gmail.com</a></li>
         </ul>
     </section>
@@ -74,7 +98,7 @@
         <p>&copy; 2024 Saba Amanollahi</p>
     </footer>
 
-    <!-- JavaScript for Smooth Scrolling without URL Fragments -->
+    <!-- Smooth Scrolling JavaScript -->
     <script>
         function scrollToSection(sectionId) {
             const section = document.getElementById(sectionId);
